@@ -19,7 +19,7 @@ exports.formularioProyecto = async (req, res) => {
     const usuarioId = res.locals.usuario.id;
     const proyectos = await Proyectos.findAll({where: {usuarioId} });
 
-    res.render('nuevoProyecto', {
+    res.render('nuevoproyecto', {
         nombrePagina: 'Nuevo Proyecto',
         proyectos
     })
