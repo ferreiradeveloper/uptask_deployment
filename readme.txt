@@ -70,5 +70,29 @@ una secuencia logica para hacer un endpoint nuevo seria:
     declaramos variables e instalamos: npm i --save dotenv y setiamos las variables en nuestro db.js
 2- seguimos agregando variables y las importamos al index.js principal line 10 y las usamos
     a partir de la linea 85
+3- creamos repo en github
+4- instalamos heroku cli (si no lo tenemos)
+5- desde la terminal: heroku create --remote production
+6- vamos a heroku:
+    pinchamos en la app
+    more/view logs (solo para ver)
+7- terminal: git push production master (subida de archivos) cada vez que se hagan cambios 
+    se debe subir a git y luego el push a heroku (control de versiones e integracion continua)
+8- instanciando mysql y nuevas credenciales para la bd
+    vamos al dashboard de Heroku/app/resources y buscamos mysql, seleccionamos ClearDB-Mysql y
+    submit-form (agrega el servicio a  nuestra app)
+9- vamos a setting para ver las credenciales de la base de datos, pulsando reveal config vars,
+    tambien desde la terminal con: heroku config | grep CLEARDB_DATABASE_URL
+10- desde la terminal:
+    heroku config:set BD_NOMBRE=heroku_bc71f5fe9f5ce12 (repetir para las demas variables)
+    desde heroku: añadir variables con el lapiz,
+    recordar esto:
+    base de datos: al final antes ? y comienza con Heroku_
+    user: luego de // y antes de los :
+    pass: between : and @
+    host: entre la @ y la /
+    port: 3306
+11- cuando todo esto este listo pulsar 
+
 
 
