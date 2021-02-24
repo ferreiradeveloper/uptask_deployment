@@ -1,5 +1,5 @@
 const Proyectos = require('../models/Proyectos');
-const slug = require('slug');
+//const slug = require('slug');
 const Tareas = require('../models/Tareas');
 
 exports.proyectoHome = async (req,res) => {

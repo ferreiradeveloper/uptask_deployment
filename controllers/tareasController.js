@@ -1,4 +1,3 @@
-//const { noExtendLeft } = require('sequelize/types/lib/operators');
 const Proyectos = require('../models/Proyectos');
 const Tareas = require('../models/Tareas');
 
